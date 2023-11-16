@@ -1,10 +1,22 @@
-<h1>Index</h1>
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://pyxis.nymag.com/v1/imgs/978/4d0/4b4779e1dcb86984abe55c08366f9babe7-13-empty-theater.jpg);">
+  <div class="container text-center">
+    <h1>Save any Kind of Movies!</h1>
+    <p>Love for cinema unites us all.</p>
+  </div>
+</div>
 
-<div id="lists">
-  <% @lists.each do |listr| %>
-    <%=listr.name %>
-    <p>
-      <%= link_to "Show this list", listr %>
-    </p>
+
+
+
+<div class="container">
+  <div class="row">
+ <% @lists.each do |list| %>
+    <div class="col-4">
+    <%= link_to list.name, list %>
+    </div>
   <% end %>
 </div>
+  </div>
+</div>
+
+
