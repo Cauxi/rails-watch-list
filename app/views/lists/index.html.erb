@@ -1,0 +1,10 @@
+<h1>Index</h1>
+
+<div id="lists">
+  <% @lists.each do |listr| %>
+    <%=listr.name %>
+    <p>
+      <%= link_to "Show this list", listr %>
+    </p>
+  <% end %>
+</div>
