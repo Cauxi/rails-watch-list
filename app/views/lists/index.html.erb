@@ -8,15 +8,14 @@
 
 
 
+
+
 <div class="container">
-  <div class="row">
- <% @lists.each do |list| %>
-    <div class="col-4">
-    <%= link_to list.name, list %>
-    </div>
-  <% end %>
-</div>
+  <div class="cards">
+    <% @lists.each do |list| %>
+      <div class="card-category d-flex align-items-center text-center" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://i0.wp.com/www.wcipp.org.au/wp-content/uploads/2022/12/test-image-Not-seen-on-Bungalook-Web-Page-used-for-testing-Image-related-stuff.jpg?fit=1920%2C1080&ssl=1)">
+        <%= link_to list.name, list %>
+      </div>
+    <% end %>
   </div>
 </div>
-
-
